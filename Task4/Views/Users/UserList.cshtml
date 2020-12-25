@@ -1,0 +1,34 @@
+﻿@model List<Task4.Models.ApplicationUser>
+@{
+    ViewData["Title"] = "User List";
+}
+<h1>User management</h1>
+<div class="page">
+    <div class="userTable">
+        <div class="row">
+            <div class="userIdStatic col-2">Id</div>
+            <div class="userNameStatic col-1">Name</div>
+            <div class="userEmailStatic col-2">Email</div>
+            <div class="userRegistrationDateStatic col-2">RegistrationDate</div>
+            <div class="userLastLoginDateStatic col-2">LastLoginDate</div>
+            <div class="userStatusStatic col-1">Status</div>
+            <div class="toolbarStatic col-2">Options</div>
+        </div>
+        @foreach (var user in Model)
+        {
+            <div class="row">
+                <div class="userId col-2">@user.Id</div>
+                <div class="userName col-1">@user.UserName</div>
+                <div class="userEmail col-2">@user.Email</div>
+                <div class="userRegistrationDate col-2">@user.RegistrationDate</div>
+                <div class="userLastLoginDate col-2">@user.LastLoginDate</div>
+                <div class="userStatus col-1">@user.Status</div>
+                <div class="toolbar col-2">
+                    <button class="btn btn-primary">Block</button>
+                    <button class="btn btn-success">Unblock</button>
+                    <button class="btn btn-danger">Delete</button>
+                </div>
+            </div>
+        }
+    </div>
+</div>
