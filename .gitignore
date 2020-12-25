@@ -1,0 +1,6 @@
+/.vs
+/Task4/bin
+/Task4/obj
+/Task4/wwwroot/lib/bootstrap/dist/css/*.map
+/Task4/wwwroot/lib/jquery/dist/*.map
+/Task4/wwwroot/lib/bootstrap/dist/js/*.map
